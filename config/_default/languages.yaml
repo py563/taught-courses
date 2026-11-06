@@ -2,10 +2,10 @@ en:
   languageName: English
   weight: 1
   ### copyright (markdown can be used) ###
-  copyright: "Copyright &copy; {{< current_year >}} Company Name. All Rights Reserved. [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) for Hugo by [CNCF](https://www.cncf.io)."
-  title: "Site Title"
+  copyright: "Copyright &copy; {{< current_year >}} [Prajwal Yashasvi](https://prajwalyashasvi.in/). All Rights Reserved. Handcrafted With ❤ in Hyderabad. Design inspired from [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) for Hugo."
+  title: "PY563"
   params:
-    description: "Site Description"
+    description: "All courses taught by Prajwal at different colleges"
     ### accessibility ###
     accessibility:
       skip_text: "Skip to content"
