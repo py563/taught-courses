@@ -1,5 +1,5 @@
 {
-  "name": "dot-org-hugo-theme",
+  "name": "py563-teaching",
   "version": "1.0.0",
   "description": "",
   "main": "none.js",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cncf/dot-org-hugo-theme"
+    "url": "https://github.com/py563/taught-courses"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "py563",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cncf/dot-org-hugo-theme/issues"
+    "url": "https://github.com/py563/taught-courses/issues"
   },
-  "homepage": "https://github.com/cncf/dot-org-hugo-theme#readme",
+  "homepage": "https://github.com/py563/taught-courses#readme",
   "dependencies": {
     "autoprefixer": "^10.4.21",
     "netlify-cli": "^22.3.0",
