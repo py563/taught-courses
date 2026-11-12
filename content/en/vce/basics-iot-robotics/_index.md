@@ -25,4 +25,12 @@ weight: 30
 
 ## Materials
 
-Lab manuals and programs are not on this site yet. For questions about past lab content, use [Contact](/contact/).
+| Resource | Link |
+|----------|------|
+| Lab programs (Arduino & Raspberry Pi) | [Lab programs](/vce/basics-iot-robotics/lab-programs/) |
+
+Lab manuals are not published here yet. Questions: [Contact](/contact/).
+
+## License
+
+Programs and related materials were published under the [MIT License](/courses/vce-cse-bir-iot-2023/LICENSE). For use of content on this site today, see [FAQs](/faq/).
