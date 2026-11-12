@@ -1,10 +1,10 @@
 ######################## custom scripts & styles ####################
 
 # Add custom assets relative to /static or via https
-logo_on_white: "/img/logo-b.svg"
-logo_on_black: "/img/logo-w.svg"
+# Header/footer brand: layouts/partials/site-brand.html (favicon + PY563)
 custom_js: []
-custom_css: []
+custom_css:
+  - "/css/brand.css"
 
 ######################## custom config ####################
 

@@ -1,0 +1,9 @@
+<a class="site-brand logo-link site-brand--{{ .variant | default "header" }}" href="{{ "/" | absLangURL }}">
+    <img
+        class="site-brand__icon"
+        src="{{ "favicon-32x32.png" | absURL }}"
+        width="40"
+        height="40"
+        alt="{{ with .Site }}{{ .Title }}{{ else }}Home{{ end }}"
+    />
+</a>

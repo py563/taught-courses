@@ -1,0 +1,28 @@
+.site-brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.site-brand__icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 6px;
+}
+
+@media (min-width: 1000px) {
+    .site-brand__icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 999px) {
+    .footer .site-brand {
+        margin: 20px auto 0;
+        justify-content: center;
+        width: 100%;
+    }
+}
