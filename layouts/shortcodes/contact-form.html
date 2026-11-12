@@ -1,5 +1,13 @@
-{{- $worker := site.Params.contact.worker_url | default "https://py-website-contact-worker.prajwal-b27.workers.dev" -}}
-{{- $source := site.Params.contact.source | default site.BaseURL -}}
+{{- $worker := "" -}}
+{{- $source := site.Params.contact.source | default "teaching.prajwalyashasvi.in" -}}
+{{- with site.Params.contact -}}
+  {{- with .worker_url -}}
+    {{- $worker = printf "%v" . -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $worker "" -}}
+  {{- $worker = "https://py-website-contact-worker.prajwal-b27.workers.dev" -}}
+{{- end -}}
 
 <div class="contact-form-shell">
   <p class="contact-form-shell__lead">
@@ -7,7 +15,14 @@
     I usually reply within a few days.
   </p>
 
-  <form class="contact-form" id="teaching-contact-form" action="{{ $worker }}" method="post" novalidate>
+  <form
+    class="contact-form"
+    id="teaching-contact-form"
+    method="post"
+    novalidate
+    data-worker-url="{{ $worker }}"
+    data-source="{{ $source }}"
+  >
     <div class="contact-form__row contact-form__row--split">
       <div class="contact-form__field">
         <label for="teaching-contact-name">Name</label>
@@ -67,68 +82,4 @@
   </p>
 </div>
 
-<script>
-  (function () {
-    var form = document.getElementById("teaching-contact-form");
-    if (!form) return;
-
-    var workerUrl = {{ $worker | jsonify }};
-    var source = {{ $source | jsonify }};
-    var statusEl = document.getElementById("teaching-contact-status");
-    var submitBtn = document.getElementById("teaching-contact-submit");
-    var defaultLabel = submitBtn.textContent;
-
-    function setStatus(message, type) {
-      statusEl.hidden = !message;
-      statusEl.textContent = message || "";
-      statusEl.classList.remove("is-error", "is-success", "is-pending");
-      if (type) statusEl.classList.add(type);
-    }
-
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      setStatus("Sending your message…", "is-pending");
-      submitBtn.disabled = true;
-      submitBtn.textContent = "Sending…";
-
-      var formData = new FormData(form);
-      var payload = {
-        name: formData.get("name"),
-        phoneNumber: formData.get("phoneNumber"),
-        email: formData.get("email"),
-        message: formData.get("message"),
-        source: source,
-      };
-
-      fetch(workerUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      })
-        .then(function (response) {
-          if (!response.ok) {
-            return response.text().then(function (text) {
-              throw new Error(text || "Request failed");
-            });
-          }
-          return response.json().catch(function () {
-            return {};
-          });
-        })
-        .then(function () {
-          form.reset();
-          setStatus("Thanks — your message was sent. I’ll get back to you soon.", "is-success");
-        })
-        .catch(function () {
-          setStatus(
-            "Something went wrong. Please try again or email work@prajwalyashasvi.in directly.",
-            "is-error"
-          );
-        })
-        .finally(function () {
-          submitBtn.disabled = false;
-          submitBtn.textContent = defaultLabel;
-        });
-    });
-  })();
-</script>
+<script defer src="{{ "js/contact-form.js" | relURL }}"></script>
