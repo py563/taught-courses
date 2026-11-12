@@ -2,8 +2,6 @@
 title: "Getting Started with Windows Subsystem for Linux (WSL)"
 description: "Value-added course on WSL setup and developer workflow on Windows."
 weight: 50
-aliases:
-  - /vce-wsl-vac/
 ---
 
 {{< intro >}}

@@ -57,6 +57,8 @@ jobs:
             --minify \
             --configDir=config \
             --baseURL "https://teaching.prajwalyashasvi.in/"
+      - name: Build search index (Pagefind)
+        run: npx -y pagefind --site public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

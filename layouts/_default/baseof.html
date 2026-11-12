@@ -5,7 +5,8 @@
         {{- partial "accessibility.html" . -}}
         {{- partial "header.html" . -}}
         
-        <section id="content" class="container wrap" {{ if .IsPage }}data-pagefind-body{{ end }}>
+        {{- $pagefindBody := and (not .Params.noindex) (or .IsPage (eq .Kind "section") (eq .Kind "home")) -}}
+        <section id="content" class="container wrap" {{- if $pagefindBody }} data-pagefind-body{{- end -}}>
             {{ if ne .Params.showHeader false }}
                 <header>
                     {{ if and (not .IsHome) (gt (len .Ancestors) 0) }}

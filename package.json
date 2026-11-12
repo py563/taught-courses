@@ -5,11 +5,12 @@
   "main": "none.js",
   "scripts": {
     "build": "hugo --theme=dot-org-hugo-theme",
-    "build:production": "hugo --environment=production --configDir=config",
+    "build:production": "hugo --environment=production --configDir=config --minify --baseURL https://teaching.prajwalyashasvi.in/ && npx -y pagefind --site public",
+    "build:pagefind-local": "hugo --minify --configDir=config --baseURL / && npx -y pagefind --site public --output-subdir ../static/pagefind",
     "start": "hugo serve --logLevel info --configDir=config --buildDrafts --buildFuture --ignoreCache --disableFastRender --gc  --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates --templateMetrics --templateMetricsHints",
     "dev": "npm run dev:start",
     "dev:start": "hugo serve --logLevel info --configDir=config --buildDrafts --buildFuture --ignoreCache --disableFastRender --gc  --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates --templateMetrics --templateMetricsHints",
-    "dev:start:with-pagefind": "hugo --baseURL=/ --themesDir=../.. --theme=dot-org-hugo-theme && npm_config_yes=true npx pagefind --site 'public' --output-subdir '../static/pagefind' && npm run dev:start",
+    "dev:start:with-pagefind": "npm run build:pagefind-local && npm run dev:start",
     "dev:build": "hugo --themesDir=../.. --theme=dot-org-hugo-theme"
   },
   "repository": {
