@@ -54,6 +54,12 @@ All lectures will be practical hands-on sessions, you will be also working on de
 
 - Code will be maintained in a repository on Github and will be hosted using Github Pages. Weekly progress will be tracked on Github for successful completion of the course.
 
+## Student programs & course repository
+
+Programs and materials shared with students during the VAC:
+
+- [py563/vce-cse-wsl-2022](https://github.com/py563/vce-cse-wsl-2022)
+
 ## References & Notes
 
 - [WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/) 

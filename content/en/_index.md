@@ -47,22 +47,22 @@ AI, IoT & Robotics labs, cloud, and other subjects at Vardhaman.
 
 {{< cards count=3 >}}
 {{< card >}}
-#### See all features
-Dot Org is loaded with shortcodes to make it easy for you to construct pages and content however you want.
+#### Node.js two-day workshop
+Hands-on expert session: Node.js runtime, npm, HTTP, and building a small server-side app.
 {{< spacer 5 >}}
-{{< button link="/demo-page" text="Demo Page" >}}
+{{< button link="/workshops/nodejs-two-day/" text="Workshop" >}}
 {{< /card >}}
 {{< card >}}
-#### Frequently Asked Qs
-A special Frequently Asked Questions "FAQ" layout loads each post inside an accordion for quick navigation.
+#### ISAECT 2025 peer review
+Certificate of appreciation for evaluating manuscripts at ISAECT, CGC University Mohali (Dec 2025).
+{{< spacer 5 >}}
+{{< button link="/workshops/isaect-2025-peer-review/" text="Certificate" >}}
+{{< /card >}}
+{{< card >}}
+#### FAQs & blog
+Reuse, attribution, and updates on this site.
 {{< spacer 5 >}}
 {{< button link="/faq" text="FAQs" >}}
-{{< /card >}}
-{{< card >}}
-#### Full Blog ready to go
-The built-in blog functionality comes with reusable author data file, breadcrumbs and pagination.
-{{< spacer 5 >}}
-{{< button link="/blog" text="Blog" >}}
 {{< /card >}}
 {{< /cards >}}
 {{< spacer 20 >}}
