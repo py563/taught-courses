@@ -1,0 +1,16 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ $paginator := .Paginate .Pages }}
+  {{- range $paginator.Pages }}
+      <article class="blog-item">
+        <h2 class="blog-item__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{- partial "blog/byline.html" . }}
+        {{- with .Description }}
+        <p class="blog-item__summary">{{ . }}</p>
+        {{- else }}
+        <p class="blog-item__summary">{{ .Summary | plainify }}</p>
+        {{- end }}
+      </article>
+  {{- end }}
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
