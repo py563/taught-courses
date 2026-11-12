@@ -1,0 +1,17 @@
+{{ with resources.Get "scss/styles.scss" }}
+  {{ $opts := dict
+    "enableSourceMap" hugo.IsDevelopment
+    "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
+    "targetPath" "css/styles.css"
+    "transpiler" "dartsass"
+    "vars" site.Params.styles
+  }}
+  {{ $css := . | toCSS $opts }}
+  {{ if hugo.IsDevelopment }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" media="all">
+  {{ else }}
+    {{ with $css | fingerprint "sha512" }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" media="all">
+    {{ end }}
+  {{ end }}
+{{ end }}

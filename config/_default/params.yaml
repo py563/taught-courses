@@ -6,6 +6,7 @@ custom_js: []
 custom_css:
   - "/css/brand.css"
   - "/css/theme-colors.css"
+  - "/css/layout.css"
   - "/css/contact-form.css"
 
 ######################## custom config ####################

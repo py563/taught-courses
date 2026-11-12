@@ -20,24 +20,18 @@ I am [Prajwal](https://prajwalyashasvi.in). This website brings together the cou
 
 ## Courses at Vardhaman College of Engineering
 
-{{< cards count=3 >}}
+{{< cards count=2 >}}
 {{< card >}}
-#### See all features
-Dot Org is loaded with shortcodes to make it easy for you to construct pages and content however you want.
+#### Fundamentals of Cyber Security
+JNTUH R18 - unit-wise PDF and HTML notes (FCS, 2021).
 {{< spacer 5 >}}
-{{< button link="/demo-page" text="Demo Page" >}}
+{{< button link="/vce/fcs-2021/" text="Open course" >}}
 {{< /card >}}
 {{< card >}}
-#### Frequently Asked Qs
-A special Frequently Asked Questions "FAQ" layout loads each post inside an accordion for quick navigation.
+#### More VCE courses
+Additional subjects and semesters will be added here.
 {{< spacer 5 >}}
-{{< button link="/faq" text="FAQs" >}}
-{{< /card >}}
-{{< card >}}
-#### Full Blog ready to go
-The built-in blog functionality comes with reusable author data file, breadcrumbs and pagination.
-{{< spacer 5 >}}
-{{< button link="/blog" text="Blog" >}}
+{{< button link="/vce/" text="All VCE" >}}
 {{< /card >}}
 {{< /cards >}}
 

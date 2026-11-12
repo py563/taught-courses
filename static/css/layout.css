@@ -1,0 +1,54 @@
+/* Dot Org defaults to a narrow reading column (~895px), not a sidebar. */
+:root {
+    --content-width: 100%;
+}
+
+/* Breadcrumb + page title use the same width as body copy */
+#content > header {
+    max-width: 100%;
+}
+
+/* Page title — scales to fit one line on tablet+ (theme default 44px / 80px is too wide) */
+#content > header h1.title {
+    font-size: clamp(1.2rem, 2.75vw + 0.55rem, 3.15rem);
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+}
+
+@media (min-width: 480px) {
+    #content > header h1.title {
+        white-space: nowrap;
+    }
+}
+
+/*
+ * Justified paragraphs on teaching pages (wider viewports).
+ * Avoids ragged edges on long notes; keep left-aligned on small screens.
+ */
+@media (min-width: 600px) {
+    .content p,
+    .content li,
+    .content .intro,
+    .faq__content p,
+    .faq__content li {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+    }
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
+.content blockquote,
+.content table,
+.content pre,
+.content .button,
+.contact-form-shell,
+.content img {
+    text-align: initial;
+    hyphens: manual;
+}
