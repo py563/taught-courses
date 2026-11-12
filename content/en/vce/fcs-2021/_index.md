@@ -1,8 +1,6 @@
 ---
 title: "Fundamentals of Cyber Security"
 description: "FCS (2021): Unit-wise notes and policy catalog for Fundamentals of Cyber Security at VCE CSE."
-aliases:
-  - /vce-wsl-vac/
 ---
 
 {{< intro >}}
