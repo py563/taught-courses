@@ -59,10 +59,10 @@ Evaluating manuscripts at ISAECT, CGC University Mohali (Dec 2025).
 {{< button link="/workshops/isaect-2025-peer-review/" text="Certificate" >}}
 {{< /card >}}
 {{< card >}}
-#### FAQs & blog
-Reuse, attribution, and updates on this site.
+#### More workshops
+Peer review, FDPs, and other expert sessions as they are added.
 {{< spacer 5 >}}
-{{< button link="/faq" text="FAQs" >}}
+{{< button link="/workshops/" text="All workshops" >}}
 {{< /card >}}
 {{< /cards >}}
 {{< spacer 20 >}}
