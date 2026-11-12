@@ -45,7 +45,7 @@ AI, IoT & Robotics labs, cloud, and other subjects at Vardhaman.
 
 ## Expert Speaker & Workshops
 
-{{< cards count=3 >}}
+{{< cards count=4 >}}
 {{< card >}}
 #### Node.js two-day workshop
 Hands-on expert session: Node.js runtime, npm, HTTP, and building a small server-side app.
@@ -59,8 +59,14 @@ Evaluating manuscripts at ISAECT, CGC University Mohali (Dec 2025).
 {{< button link="/workshops/isaect-2025-peer-review/" text="Certificate" >}}
 {{< /card >}}
 {{< card >}}
+#### FDP — IoT & Raspberry Pi
+VCE faculty programme: curated Pi/IoT courses, starter projects, and lab reference links.
+{{< spacer 5 >}}
+{{< button link="/workshops/fdp-iot-raspberry-pi/" text="FDP" >}}
+{{< /card >}}
+{{< card >}}
 #### More workshops
-Peer review, FDPs, and other expert sessions as they are added.
+Other expert sessions and materials as they are added.
 {{< spacer 5 >}}
 {{< button link="/workshops/" text="All workshops" >}}
 {{< /card >}}
