@@ -1,6 +1,6 @@
 ---
-title: "FAQs"
-description: "Frequently Asked Questions"
+title: "VCE Courses"
+description: "Courses taught at Vardhaman College of Engineering."
 ---
 
-Here are some frequently asked questions.
+Course materials for subjects at Vardhaman College of Engineering will be listed here.

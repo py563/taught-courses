@@ -1,0 +1,50 @@
+/* Portfolio palette (prajwalyashasvi.in) */
+:root {
+    --primary-400: #468499;
+    --primary-500: #3b707f;
+    --primary-600: #468499;
+    --primary-700: #234057;
+    --primary-800: #1a3042;
+
+    --link-color: #468499;
+    --link-color-hover: #234057;
+    --menu-link-color-hover: #468499;
+    --footer-link-color-hover: #468499;
+}
+
+.footer {
+    background-color: #234057;
+}
+
+.content a:not(.button):not(.main-menu-cta) {
+    color: #468499;
+}
+
+.content a:not(.button):not(.main-menu-cta):hover,
+.content a:not(.button):not(.main-menu-cta):focus {
+    color: #234057;
+}
+
+a.button,
+a.button.secondary,
+a.button.tertiary,
+a.main-menu-cta {
+    color: #ffffff;
+}
+
+a.button:hover,
+a.button:focus,
+a.button:active,
+a.button.secondary:hover,
+a.button.secondary:focus,
+a.button.secondary:active,
+a.button.tertiary:hover,
+a.button.tertiary:focus,
+a.main-menu-cta:hover,
+a.main-menu-cta:focus {
+    color: #ffffff;
+}
+
+a.button.tertiary:active {
+    color: #000000;
+}
