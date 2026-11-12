@@ -54,7 +54,7 @@ Hands-on expert session: Node.js runtime, npm, HTTP, and building a small server
 {{< /card >}}
 {{< card >}}
 #### ISAECT 2025 peer review
-Certificate of appreciation for evaluating manuscripts at ISAECT, CGC University Mohali (Dec 2025).
+Evaluating manuscripts at ISAECT, CGC University Mohali (Dec 2025).
 {{< spacer 5 >}}
 {{< button link="/workshops/isaect-2025-peer-review/" text="Certificate" >}}
 {{< /card >}}

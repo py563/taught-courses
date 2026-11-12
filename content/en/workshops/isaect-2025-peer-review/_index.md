@@ -5,7 +5,7 @@ weight: 20
 ---
 
 {{< intro >}}
-**Certificate of Appreciation** for contributing to the peer-review process at the **7th International Symposium on Advanced Electrical & Communication Technologies** — *Intelligent Systems for a Sustainable and Connected Future* (**ISAECT 2025**).
+Contributed to the peer-review process at the **7th International Symposium on Advanced Electrical & Communication Technologies** — *Intelligent Systems for a Sustainable and Connected Future* (**ISAECT 2025**).
 {{< /intro >}}
 
 ## Event
