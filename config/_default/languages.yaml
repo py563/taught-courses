@@ -3,9 +3,9 @@ en:
   weight: 1
   ### copyright (markdown can be used) ###
   copyright: "Copyright &copy; {{< current_year >}} [Prajwal Yashasvi](https://prajwalyashasvi.in/). All Rights Reserved. Handcrafted With ❤ in Hyderabad. Design inspired from [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) for Hugo."
-  title: "PY563"
+  title: "PY563 | Courses by Prajwal Yashasvi"
   params:
-    description: "All courses taught by Prajwal at different colleges"
+    description: "Course materials, syllabi, and teaching resources from Prajwal Yashasvi—college courses, FDPs, talks, and STTPs across engineering colleges in India."
     ### accessibility ###
     accessibility:
       skip_text: "Skip to content"

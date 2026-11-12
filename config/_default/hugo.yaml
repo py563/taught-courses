@@ -8,6 +8,24 @@ timeZone: "Asia/Kolkata"
 # Defines the minimum amount of words to reddened in a summary
 summaryLength: 50
 
+######################## SEO & discoverability ####################
+# Production merges enableRobotsTXT; see config/production/hugo.yaml
+outputFormats:
+  LLMSTXT:
+    mediaType: text/plain
+    baseName: llms
+    isPlainText: true
+    notAlternative: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - LLMSTXT
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+  filename: sitemap.xml
+
 ######################## i18n ####################
 # Auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 hasCJKLanguage: true

@@ -1,7 +1,10 @@
 ---
-title: Dot Org Theme Demo
-description: This is the demo site for Dot Org Theme. The title description and images front matter is required for meta og content.
+title: Courses & Teaching Materials
+description: Courses taught by Prajwal Yashasvi at engineering colleges, with syllabi, notes, and resources from FDPs, talks, and STTPs.
 showHeader: false
+sitemap:
+  priority: 1.0
+  changefreq: weekly
 ---
 
 {{< columns count=2 >}}

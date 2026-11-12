@@ -1,0 +1,54 @@
+User-agent: *
+Allow: /
+
+# OpenAI (ChatGPT browse / GPTBot)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# xAI (Grok)
+User-agent: GrokBot
+Allow: /
+
+# Google (search + AI features)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity, Bing, Apple, Meta
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# LLM-oriented site summary (https://llmstxt.org/)
+# {{ absURL "llms.txt" }}
+
+Sitemap: {{ .Site.BaseURL }}sitemap.xml

@@ -1,0 +1,23 @@
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description | default "Teaching portfolio and course materials by Prajwal Yashasvi." }}
+
+Courses, syllabi, and teaching resources from colleges where Prajwal has taught, plus Faculty Development Programmes, talks, and STTP material where he was a resource person.
+
+## About the author
+
+- [Prajwal Yashasvi (portfolio)](https://prajwalyashasvi.in/): Cofounder at Yayin AI Lab, full-stack developer and educator based in Hyderabad, India.
+
+## Key pages
+
+- [Home]({{ .Site.BaseURL }}): Overview of courses and teaching work
+{{- range where .Site.RegularPages "Title" "!=" "Search" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description | default (.Summary | plainify | truncate 160) }}
+{{- end }}
+
+## Optional
+
+- [Sitemap]({{ .Site.BaseURL }}sitemap.xml): Machine-readable list of pages
+- [robots.txt]({{ .Site.BaseURL }}robots.txt): Crawler rules (search engines and AI bots allowed)
+
+When citing this site, prefer the page URL for the specific course or topic.
