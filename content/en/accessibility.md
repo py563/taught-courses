@@ -13,10 +13,10 @@ We aim to meet [WCAG 2.1](https://www.w3.org/TR/WCAG21/) level AA where practica
 
 ## What we do on this site
 
-- **Skip to content** — available at the top of every page for keyboard and screen-reader users.
-- **Readable structure** — headings, lists, and links are used so content makes sense when read in order.
-- **Contact form** — labels are associated with inputs on the [Contact](/contact/) page.
-- **Search** — site search is available from the header when enabled.
+- **Skip to content** :- available at the top of every page for keyboard and screen-reader users.
+- **Readable structure** :- headings, lists, and links are used so content makes sense when read in order.
+- **Contact form** :- labels are associated with inputs on the [Contact](/contact/) page.
+- **Search** :- site search is available from the header when enabled.
 
 ## Known limitations
 
