@@ -21,15 +21,19 @@ en:
     github_edit: "Edit this page on GitHub"
   menu:
     main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
     - identifier: "blog"
       name: "Blog"
       url: "/blog/"
-      weight: 1
+      weight: 2
     - identifier: "faq"
       name: "FAQs"
       url: "/faq/"
-      weight: 2
+      weight: 3
     - identifier: "about"
       name: "About"
       url: "https://prajwalyashasvi.in/"
-      weight: 3
+      weight: 4
