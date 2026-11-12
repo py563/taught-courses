@@ -23,7 +23,7 @@ I am [Prajwal](https://prajwalyashasvi.in). This website brings together the cou
 {{< cards count=2 >}}
 {{< card >}}
 #### Fundamentals of Cyber Security
-JNTUH R18 - unit-wise PDF and HTML notes (FCS, 2021).
+Unit-wise PDF and Notes, B.Tech CSE 2021 Odd Semester (Fall 2021).
 {{< spacer 5 >}}
 {{< button link="/vce/fcs-2021/" text="Open course" >}}
 {{< /card >}}
