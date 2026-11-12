@@ -20,7 +20,7 @@ I am [Prajwal](https://prajwalyashasvi.in). This website brings together the cou
 
 ## Courses at Vardhaman College of Engineering
 
-{{< cards count=2 >}}
+{{< cards count=3 >}}
 {{< card >}}
 #### Fundamentals of Cyber Security
 Unit-wise PDF and Notes, B.Tech CSE 2021 Odd Semester (Fall 2021).
@@ -28,8 +28,14 @@ Unit-wise PDF and Notes, B.Tech CSE 2021 Odd Semester (Fall 2021).
 {{< button link="/vce/fcs-2021/" text="Open course" >}}
 {{< /card >}}
 {{< card >}}
+#### Getting Started with WSL
+Value added course: WSL, VS Code, Git, GitHub, and a portfolio project—hands-on labs.
+{{< spacer 5 >}}
+{{< button link="/vce/wsl-vac/" text="Open course" >}}
+{{< /card >}}
+{{< card >}}
 #### More at VCE
-AI, IoT & Robotics labs, cloud, cyber security, and the archived WSL value-added course.
+AI, IoT & Robotics labs, cloud, and other subjects at Vardhaman.
 {{< spacer 5 >}}
 {{< button link="/vce/" text="All VCE courses" >}}
 {{< /card >}}
