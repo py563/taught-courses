@@ -50,9 +50,9 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          # sass-embedded from npm (snap dart-sass is unreliable on GitHub runners)
-          PATH: ${{ github.workspace }}/node_modules/.bin:${{ env.PATH }}
         run: |
+          # Prefer npm sass-embedded; keep system PATH so dpkg Hugo stays available
+          export PATH="${GITHUB_WORKSPACE}/node_modules/.bin:${PATH}"
           hugo \
             --minify \
             --configDir=config \
