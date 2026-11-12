@@ -46,6 +46,17 @@
     }
 }
 
+/* Honeypot — hidden from users, filled by naive bots (worker rejects silently). */
+.contact-form__honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .contact-form__field {
     display: flex;
     flex-direction: column;

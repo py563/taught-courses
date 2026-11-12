@@ -31,6 +31,7 @@
       email: formData.get("email"),
       message: formData.get("message"),
       source: source,
+      nickname: formData.get("nickname"),
     };
 
     fetch(workerUrl, {
