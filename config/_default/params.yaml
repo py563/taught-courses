@@ -37,7 +37,7 @@ social_links:
   youtube: ""
 
 contact:
-  worker_url: "https://py-website-contact-worker.prajwal-b27.workers.dev"
+  worker_url: "https://contact-api.prajwalyashasvi.in"
   source: "teaching.prajwalyashasvi.in"
 
 # Makes the header sticky on tall screens
