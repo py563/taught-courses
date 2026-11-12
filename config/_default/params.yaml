@@ -6,6 +6,7 @@ custom_js: []
 custom_css:
   - "/css/brand.css"
   - "/css/theme-colors.css"
+  - "/css/contact-form.css"
 
 ######################## custom config ####################
 
@@ -33,6 +34,10 @@ social_links:
   threads: ""
   twitter: "https://x.com/py563"
   youtube: ""
+
+contact:
+  worker_url: "https://py-website-contact-worker.prajwal-b27.workers.dev"
+  source: "teaching.prajwalyashasvi.in"
 
 # Makes the header sticky on tall screens
 sticky_header: true

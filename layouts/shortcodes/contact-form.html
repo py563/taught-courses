@@ -1,53 +1,134 @@
-<form action="https://formspree.io/f/xgegovpv" method="POST">
-  <label>
-    Name:
-    <input type="text" required name="name" />
-  </label>
+{{- $worker := site.Params.contact.worker_url | default "https://py-website-contact-worker.prajwal-b27.workers.dev" -}}
+{{- $source := site.Params.contact.source | default site.BaseURL -}}
 
-  <label>
-    Phone number:
-    <input type="text" required name="phoneNumber" />
-  </label>
+<div class="contact-form-shell">
+  <p class="contact-form-shell__lead">
+    Send a message about <strong>courses</strong>, <strong>permissions</strong>, or <strong>collaboration</strong>.
+    I usually reply within a few days.
+  </p>
 
-  <label>
-    Email:
-    <input type="email" required name="email" />
-  </label>
+  <form class="contact-form" id="teaching-contact-form" action="{{ $worker }}" method="post" novalidate>
+    <div class="contact-form__row contact-form__row--split">
+      <div class="contact-form__field">
+        <label for="teaching-contact-name">Name</label>
+        <input
+          id="teaching-contact-name"
+          type="text"
+          name="name"
+          required
+          autocomplete="name"
+          placeholder="Your full name"
+        />
+      </div>
+      <div class="contact-form__field">
+        <label for="teaching-contact-phone">Phone</label>
+        <input
+          id="teaching-contact-phone"
+          type="tel"
+          name="phoneNumber"
+          required
+          autocomplete="tel"
+          placeholder="+91 …"
+        />
+      </div>
+    </div>
 
-  <label>
-    Message:
-    <textarea required name="message"></textarea>
-  </label>
+    <div class="contact-form__field">
+      <label for="teaching-contact-email">Email</label>
+      <input
+        id="teaching-contact-email"
+        type="email"
+        name="email"
+        required
+        autocomplete="email"
+        placeholder="you@college.edu"
+      />
+    </div>
 
-  <button type="submit">Send</button>
-</form>
+    <div class="contact-form__field">
+      <label for="teaching-contact-message">Message</label>
+      <textarea
+        id="teaching-contact-message"
+        name="message"
+        required
+        placeholder="What would you like to discuss?"
+      ></textarea>
+    </div>
 
-<style>
-  /* Some nice boilerplate CSS to tidy up your form */
-  form {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-gap: 1rem;
-    text-align: left;
-    padding: 2rem 0;
-    margin: 0;
-  }
-  form label {
-    display: contents;
-  }
-  form input[type="email"],
-  form textarea,
-  form button {
-    font-family: inherit;
-    font-size: inherit;
-    border: 1px solid currentColor;
-    background: none;
-    padding: 0.4rem 0.5rem;
-  }
-  form textarea {
-    resize: vertical;
-  }
-  form button {
-    justify-self: start;
-  }
-</style>
+    <div class="contact-form__footer">
+      <button type="submit" class="button contact-form__submit" id="teaching-contact-submit">Send message</button>
+      <p class="contact-form__status" id="teaching-contact-status" role="status" aria-live="polite" hidden></p>
+    </div>
+  </form>
+
+  <p class="contact-form__fine">
+    Prefer email?
+    <a href="mailto:work@prajwalyashasvi.in">work@prajwalyashasvi.in</a>
+  </p>
+</div>
+
+<script>
+  (function () {
+    var form = document.getElementById("teaching-contact-form");
+    if (!form) return;
+
+    var workerUrl = {{ $worker | jsonify }};
+    var source = {{ $source | jsonify }};
+    var statusEl = document.getElementById("teaching-contact-status");
+    var submitBtn = document.getElementById("teaching-contact-submit");
+    var defaultLabel = submitBtn.textContent;
+
+    function setStatus(message, type) {
+      statusEl.hidden = !message;
+      statusEl.textContent = message || "";
+      statusEl.classList.remove("is-error", "is-success", "is-pending");
+      if (type) statusEl.classList.add(type);
+    }
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      setStatus("Sending your message…", "is-pending");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending…";
+
+      var formData = new FormData(form);
+      var payload = {
+        name: formData.get("name"),
+        phoneNumber: formData.get("phoneNumber"),
+        email: formData.get("email"),
+        message: formData.get("message"),
+        source: source,
+      };
+
+      fetch(workerUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+        .then(function (response) {
+          if (!response.ok) {
+            return response.text().then(function (text) {
+              throw new Error(text || "Request failed");
+            });
+          }
+          return response.json().catch(function () {
+            return {};
+          });
+        })
+        .then(function () {
+          form.reset();
+          setStatus("Thanks — your message was sent. I’ll get back to you soon.", "is-success");
+        })
+        .catch(function () {
+          setStatus(
+            "Something went wrong. Please try again or email work@prajwalyashasvi.in directly.",
+            "is-error"
+          );
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = defaultLabel;
+        });
+    });
+  })();
+</script>
