@@ -52,13 +52,16 @@ All lectures will be practical hands-on sessions, you will be also working on de
 
 ## Project
 
-- Code will be maintained in a repository on Github and will be hosted using Github Pages. Weekly progress will be tracked on Github for successful completion of the course.
+During the VAC, the portfolio project was built in stages and shared via GitHub; the finished site was meant to be published with [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages). Example: [cv-hugo](https://github.com/py563/cv-hugo).
 
-## Student programs & course repository
+## Student programs
 
-Programs and materials shared with students during the VAC:
+Short Python examples used in early labs (factorial and palindrome checks). They are hosted on this site—the old course repo `py563/vce-cse-wsl-2022` is archived.
 
-- [py563/vce-cse-wsl-2022](https://github.com/py563/vce-cse-wsl-2022)
+| Program | Description |
+|--------|-------------|
+| [fact1.py](/courses/vce-cse-wsl-2022/programs/fact1.py) | Recursive factorial (demo for Python on WSL) |
+| [palindrome1.py](/courses/vce-cse-wsl-2022/programs/palindrome1.py) | Palindrome check using string reversal |
 
 ## References & Notes
 
@@ -71,4 +74,4 @@ Programs and materials shared with students during the VAC:
 
 ## License
 
-Materials in this course were originally published under the [MIT License](/courses/vce-cse-fcs-2021/LICENSE). For how to use content on this site today, see [FAQs](/faq/).
+Materials in this course were originally published under the [MIT License](/courses/vce-cse-wsl-2022/LICENSE). For how to use content on this site today, see [FAQs](/faq/).
