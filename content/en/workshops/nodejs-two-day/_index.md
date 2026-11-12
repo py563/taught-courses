@@ -1,11 +1,11 @@
 ---
 title: "Node.js two-day workshop"
-description: "Two-day hands-on Node.js workshop — runtime, modules, APIs, and building small server-side apps."
+description: "Two-day hands-on Node.js workshop - runtime, modules, APIs, and building small server-side apps."
 weight: 10
 ---
 
 {{< intro >}}
-A **two-day**, hands-on **Node.js** workshop for engineering students and faculty—focused on the runtime, JavaScript on the server, npm, core modules, and building a simple backend or API.
+A **two-day**, hands-on **Node.js** workshop for engineering students focused on the runtime, JavaScript on the server, npm, core modules, and building a simple backend or API.
 {{< /intro >}}
 
 ## Format

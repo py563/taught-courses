@@ -56,7 +56,7 @@ During the VAC, the portfolio project was built in stages and shared via GitHub;
 
 ## Student programs
 
-Short Python examples used in early labs (factorial and palindrome checks). They are hosted on this site—the old course repo `py563/vce-cse-wsl-2022` is archived.
+Short Python examples used in early labs (factorial and palindrome checks). They are hosted on this site - the old course repo `py563/vce-cse-wsl-2022` is archived.
 
 | Program | Description |
 |--------|-------------|

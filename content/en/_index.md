@@ -29,7 +29,7 @@ Unit-wise PDF and Notes, B.Tech CSE 2021 Odd Semester (Fall 2021).
 {{< /card >}}
 {{< card >}}
 #### Getting Started with WSL
-Value added course: WSL, VS Code, Git, GitHub, and a portfolio project—hands-on labs.
+Value added course: WSL, VS Code, Git, GitHub, and a portfolio project with hands-on labs.
 {{< spacer 5 >}}
 {{< button link="/vce/wsl-vac/" text="Open course" >}}
 {{< /card >}}

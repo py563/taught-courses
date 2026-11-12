@@ -276,7 +276,7 @@ There are many reasons which act as a catalyst in the growth of cyber crime. Som
   * The Internet shall not be used to incentivize violence against persons or property.
   * Individuals who are stalked, bullied, blackmailed, and/or harassed on the Internet shall be able to declare that the behavior is harassment under the law.
   * Individuals who use false identities or anonymous access to report false crimes or emergencies, as well as those who itness such events without reporting them, shall receive mandatory jail terms.
-  * Existing international organizations—such as NATO, ASEAN, OAS, EU, and AU—shall include cyber crime as part of all their eliberations and treaties.
+  * Existing international organizations such as NATO, ASEAN, OAS, EU, and AU-shall include cyber crime as part of all their eliberations and treaties.
 
 
 ### Geolocation

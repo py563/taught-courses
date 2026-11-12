@@ -10,7 +10,7 @@ weight: 10
 
 ## COURSE OVERVIEW
 
-This course drawing upon a wealth of experience from academia, industry, and government service, Cyber Security details and dissects, in current organizational cyber security policy issues on a global scale—taking great care to educate students on the history and current approaches to the security of cyberspace. It includes thorough descriptions—as well as the pros and cons—of an excess of issues, and document policy alternatives for the sake of clarity with respect to policy alone. It also delves into organizational implementation issues, and equips students with descriptions of the positive and negative impact of specific policy choices. 
+This course drawing upon a wealth of experience from academia, industry, and government service, Cyber Security details and dissects, in current organizational cyber security policy issues on a global scale-taking great care to educate students on the history and current approaches to the security of cyberspace. It includes thorough descriptions as well as the pros and cons of an excess of issues, and document policy alternatives for the sake of clarity with respect to policy alone. It also delves into organizational implementation issues, and equips students with descriptions of the positive and negative impact of specific policy choices. 
 
 ## COURSE OBJECTIVE
 
