@@ -41,6 +41,14 @@
       .then(function (response) {
         if (!response.ok) {
           return response.text().then(function (text) {
+            try {
+              var err = JSON.parse(text);
+              if (err.resendDetail) {
+                console.error("Contact worker / Resend:", err.resendStatus, err.resendDetail);
+              }
+            } catch (e) {
+              /* ignore */
+            }
             throw new Error(text || "Request failed");
           });
         }
@@ -54,7 +62,7 @@
       })
       .catch(function () {
         setStatus(
-          "Something went wrong. Please try again or email work@prajwalyashasvi.in directly.",
+          "Something went wrong. Please try again or email hello@prajwalyashasvi.in directly.",
           "is-error"
         );
       })
