@@ -50,7 +50,7 @@
       })
       .then(function () {
         form.reset();
-        setStatus("Thanks — your message was sent. I’ll get back to you soon.", "is-success");
+        setStatus("Thanks, your message was sent. I'll get back to you soon.", "is-success");
       })
       .catch(function () {
         setStatus(

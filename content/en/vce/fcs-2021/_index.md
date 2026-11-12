@@ -60,7 +60,7 @@ Cross-check with the current syllabus before using these papers:
 
 Handouts shared during the course (PDF):
 
-- [Cyber Security Essentials — Cisco material](/courses/vce-cse-fcs-2021/CyberSecurityEssentials_Cisco_Material.pdf)
+- [Cyber Security Essentials -Cisco material](/courses/vce-cse-fcs-2021/CyberSecurityEssentials_Cisco_Material.pdf)
 - [Unix commands reference](/courses/vce-cse-fcs-2021/unix_commands.pdf)
 
 ## License

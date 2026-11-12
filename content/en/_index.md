@@ -28,10 +28,10 @@ Unit-wise PDF and Notes, B.Tech CSE 2021 Odd Semester (Fall 2021).
 {{< button link="/vce/fcs-2021/" text="Open course" >}}
 {{< /card >}}
 {{< card >}}
-#### More VCE courses
-Additional subjects and semesters will be added here.
+#### More at VCE
+AI, IoT & Robotics labs, cloud, cyber security, and the archived WSL value-added course.
 {{< spacer 5 >}}
-{{< button link="/vce/" text="All VCE" >}}
+{{< button link="/vce/" text="All VCE courses" >}}
 {{< /card >}}
 {{< /cards >}}
 
