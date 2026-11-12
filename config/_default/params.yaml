@@ -12,7 +12,7 @@ custom_css: []
 images: ["/img/social-share.png"]
 
 github:
-  repo_url: "https://github.com/username/repo/blob/master"
+  repo_url: "https://github.com/py563/taught-courses/blob/main"
   show_edit_link: true
 
 social_links:
@@ -20,18 +20,17 @@ social_links:
   discord: ""
   facebook: ""
   flickr: ""
-  github: "https://github.com/cncf/dot-org-hugo-theme"
+  github: "https://github.com/py563"
   instagram: ""
   landscape: ""
-  linkedin: "https://www.linkedin.com/company/cloud-native-computing-foundation"
+  linkedin: "https://www.linkedin.com/in/prajwalyashasvi"
   mastodon: ""
   pinterest: ""
   rss: ""
   slack: ""
   stackoverflow: ""
   threads: ""
-  twitter: ""
-  x: ""
+  twitter: "https://x.com/py563"
   youtube: ""
 
 # Makes the header sticky on tall screens
